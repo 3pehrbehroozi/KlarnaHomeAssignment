@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="297" id="KGk-i7-Jjw" customClass="WeatherHeaderTableViewCell" customModule="MyWeather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="297"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="296.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQj-FJ-LpG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tehran" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhG-16-Co7">
+                                <rect key="frame" x="0.0" y="32" width="320" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clear" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSF-IK-rjJ">
+                                <rect key="frame" x="16" y="111.5" width="288" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tu4-9j-g8S">
+                                <rect key="frame" x="16" y="213.5" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Bxl-K6-ahN">
+                                <rect key="frame" x="150" y="115" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Bxl-K6-ahN" firstAttribute="centerX" secondItem="jQj-FJ-LpG" secondAttribute="centerX" id="0xS-or-4Ng"/>
+                            <constraint firstAttribute="trailing" secondItem="JhG-16-Co7" secondAttribute="trailing" id="3NI-o5-7hx"/>
+                            <constraint firstAttribute="height" constant="250" id="3Nk-PI-2Ca"/>
+                            <constraint firstItem="tu4-9j-g8S" firstAttribute="leading" secondItem="jQj-FJ-LpG" secondAttribute="leading" constant="16" id="Hio-eA-MR0"/>
+                            <constraint firstAttribute="trailing" secondItem="tu4-9j-g8S" secondAttribute="trailing" constant="16" id="L03-7J-EGc"/>
+                            <constraint firstItem="Bxl-K6-ahN" firstAttribute="centerY" secondItem="jQj-FJ-LpG" secondAttribute="centerY" id="YCB-ZF-6dL"/>
+                            <constraint firstItem="JhG-16-Co7" firstAttribute="leading" secondItem="jQj-FJ-LpG" secondAttribute="leading" id="ZCF-2U-MZ5"/>
+                            <constraint firstAttribute="bottom" secondItem="tu4-9j-g8S" secondAttribute="bottom" constant="16" id="bX7-dV-Bd9"/>
+                            <constraint firstAttribute="trailing" secondItem="lSF-IK-rjJ" secondAttribute="trailing" constant="16" id="eQp-Pd-zlJ"/>
+                            <constraint firstItem="lSF-IK-rjJ" firstAttribute="centerY" secondItem="jQj-FJ-LpG" secondAttribute="centerY" id="gYd-rb-tpu"/>
+                            <constraint firstItem="JhG-16-Co7" firstAttribute="top" secondItem="jQj-FJ-LpG" secondAttribute="top" constant="32" id="k4c-41-dXT"/>
+                            <constraint firstItem="lSF-IK-rjJ" firstAttribute="leading" secondItem="jQj-FJ-LpG" secondAttribute="leading" constant="16" id="kzE-es-fov"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jQj-FJ-LpG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Fpw-d2-ktW"/>
+                    <constraint firstAttribute="bottom" secondItem="jQj-FJ-LpG" secondAttribute="bottom" id="Twv-UQ-F6J"/>
+                    <constraint firstItem="jQj-FJ-LpG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ya0-su-9Qq"/>
+                    <constraint firstAttribute="trailing" secondItem="jQj-FJ-LpG" secondAttribute="trailing" id="eWL-Cp-8n7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerHeightConstraint" destination="3Nk-PI-2Ca" id="nRG-r8-XPQ"/>
+                <outlet property="containerTopConstraint" destination="Fpw-d2-ktW" id="jfr-Q1-SKI"/>
+                <outlet property="containerView" destination="jQj-FJ-LpG" id="FDY-4f-Apm"/>
+                <outlet property="loadingActivityIndicator" destination="Bxl-K6-ahN" id="jC6-eo-nO4"/>
+                <outlet property="summaryLabel" destination="lSF-IK-rjJ" id="8q5-63-MPw"/>
+                <outlet property="timeLabel" destination="tu4-9j-g8S" id="tLg-mX-WPU"/>
+                <outlet property="timeZoneNameLabelTopConstraint" destination="k4c-41-dXT" id="DM1-7S-0B0"/>
+                <outlet property="timezoneLabel" destination="JhG-16-Co7" id="vyc-KD-B3C"/>
+            </connections>
+            <point key="canvasLocation" x="55.072463768115945" y="164.39732142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
